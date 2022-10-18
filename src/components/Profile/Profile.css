@@ -3,8 +3,8 @@ padding: 0;}
 
 :root{
     --background:#fff;
-    --background-shadow:rgb(243, 243, 243);
-    --border-color:rgb(220, 220, 220);
+    --background-shadow:rgb(248, 246, 246);
+    --border-color:rgb(233, 233, 233);
     --text-main:rgb(114, 114, 114);
     --text-name:rgb(0, 0, 0);
     display: flex;
@@ -60,3 +60,8 @@ padding: 10px;
 
 .tag{padding-bottom: 10px;}
 .location{padding-bottom: 10px;}
+
+.quantity {
+font-weight: 700;
+padding: 10px;
+}
