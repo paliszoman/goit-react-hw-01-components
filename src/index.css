@@ -1,4 +1,22 @@
-@import-normalize; /* bring in normalize.css styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #fff;
+  --background-shadow: rgb(248, 246, 246);
+  --border-color: rgb(233, 233, 233);
+  --item-list-bck: rgba(240, 239, 239, 0.39);
+  --text-main: rgb(114, 114, 114);
+  --text-name: rgb(0, 0, 0);
+  --table-background: rgba(39, 124, 234, 0.441);
+  --offline: rgba(255, 0, 0, 0.929);
+  --online: rgba(26, 255, 0, 0.929);
+  display: flex;
+  justify-content: center;
+  color: var(--text-main);
+}
 
 body {
   margin: 0;

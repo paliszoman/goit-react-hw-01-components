@@ -1,0 +1,35 @@
+
+.statistics{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 40px;
+width: 300px;
+border: 1px solid var(--border-color);
+border-radius: 5px;
+}
+
+h2{
+padding: 40px;
+}
+
+.statList{
+display: flex;
+width: 300px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background-shadow);
+    border-top: 1px solid var(--border-color);
+}
+
+.stat:nth-child(n+2) {
+    border-left: 1px solid var(--border-color);
+}

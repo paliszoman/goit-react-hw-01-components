@@ -1,16 +1,4 @@
-*{margin: 0;
-padding: 0;}
 
-:root{
-    --background:#fff;
-    --background-shadow:rgb(248, 246, 246);
-    --border-color:rgb(233, 233, 233);
-    --text-main:rgb(114, 114, 114);
-    --text-name:rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    color:var(--text-main);
-}
 .profile{
 width: 300px;
 border:1px solid var(--border-color);
@@ -31,7 +19,7 @@ justify-content: space-around;
 border-top: 1px solid var(--border-color);
 }
 
-li{
+.statsPoint{
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -42,7 +30,7 @@ background-color: var(--background-shadow);
 
 }
 
-li:nth-child(n+2) {
+.statsPoint:nth-child(n+2) {
 border-left: 1px solid var(--border-color);
 }
 

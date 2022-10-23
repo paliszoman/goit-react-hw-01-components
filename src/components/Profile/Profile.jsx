@@ -1,29 +1,29 @@
 import PropTypes from "prop-types";
-import "./Profile.css"
+import css from"./Profile.module.css"
 
 
-const Profile = ({ username, tag, location = "unknown", avatar ="https://cdn-icons-png.flaticon.com/512/1077/1077012.png", stats }) => {
-    return (<div className="profile">
-  <div className="description">
+export const Profile = ({ username, tag, location = "unknown", avatar ="https://cdn-icons-png.flaticon.com/512/1077/1077012.png", stats }) => {
+    return (<div className={css.profile}>
+  <div className={css.description}>
         <img
           src={avatar}
       alt="User avatar"
-      className="avatar"
+      className={css.avatar}
     />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+    <p className={css.location}>{location}</p>
   </div>
 
-    <ul className="stats">
+    <ul className={css.stats}>
         {[
     [1,"Followers", stats.followers],
     [2,"Views", stats.views],
     [3,"Likes", stats.likes],
   ].map(([id, text, value]) => (
-    <li key={id}>
-      <span className="label">{text}</span>
-      <span className="quantity">{value}</span>
+    <li key={id} className={css.statsPoint}>
+      <span className={css.label}>{text}</span>
+      <span className={css.quantity}>{value}</span>
     </li> ))}
   </ul>
 </div>);
@@ -37,6 +37,3 @@ Profile.propTypes = {
   stats: PropTypes.object.isRequired,
 }
 
-
-
-export {Profile};
